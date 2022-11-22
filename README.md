@@ -6,7 +6,7 @@ Desktop timer application.
 
 environment building
 
-Install node (^18.12.1) and npm.
+Install node (^18.12.1) and yarn.
 
 Install modules that electron depends on.
 
@@ -19,5 +19,5 @@ $ sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libgtk
 Launch electron app.
 
 ```
-$ npm run dev
+$ yarn dev
 ```
