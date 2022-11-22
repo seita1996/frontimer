@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react",
+    "strict": true
+  },
+  "include": ["src"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
