@@ -23,3 +23,19 @@ Launch electron app.
 ```
 $ yarn dev
 ```
+
+## Release
+
+Update the version in the project's package.json file (e.g. 1.2.3)
+
+Commit that change and add tag and push.
+
+```
+$ git commit -am v1.2.3
+$ git tag v1.2.3
+$ git push && git push --tags
+```
+
+A draft release is created and the built files are available for download.
+
+Reference [Electron Builder Action](https://github.com/marketplace/actions/electron-builder-action)
