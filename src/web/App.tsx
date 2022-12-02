@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import './App.css';
+import React, { useState } from 'react'
+import { Clock } from '../components/Clock'
+import './App.css'
 
 export const App = () => {
-  const [count, setCount] = useState(0);
-
+  const [maxSec, setMaxSec] = useState(180)
   return (
     <div className="container">
-      <h1>{count}</h1>
-      <button onClick={() => setCount((count) => count + 1)}>Count</button>
+      <Clock maxSec={maxSec} />
     </div>
-  );
-};
+  )
+}
