@@ -14,6 +14,13 @@ export const Clock: React.FC<Props> = ({maxSec = 0}) => {
     setClock(convert_hhmmss(count))
   }, [count])
 
+  useEffect(() => {
+    if(count < 1) {
+      clearInterval(intervalRef.current)
+      playSound()
+    }
+  }, [count])
+
   const start = useCallback(() => {
     if (intervalRef.current !== -1) {
       return
@@ -36,6 +43,13 @@ export const Clock: React.FC<Props> = ({maxSec = 0}) => {
     const min = Math.floor(s / 60) % 60
     const sec = s % 60
     return `${zeroFill(hour)}:${zeroFill(min)}:${zeroFill(sec)}`
+  }
+
+  const playSound = () => {
+    const message = new SpeechSynthesisUtterance("おわりです")
+    message.lang = 'ja-JP'
+    window.speechSynthesis.speak(message)
+    console.log('play')
   }
 
   const zeroFill = (num: number) => {
