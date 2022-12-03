@@ -8,6 +8,7 @@ app.whenReady().then(() => {
     },
   });
 
+  mainWindow.setAlwaysOnTop(true, 'screen-saver')
   mainWindow.loadFile('dist/index.html');
   // mainWindow.webContents.openDevTools({ mode: 'detach' });
 });
