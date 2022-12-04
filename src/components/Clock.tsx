@@ -10,6 +10,11 @@ export const Clock: React.FC<Props> = ({maxSec = 0}) => {
   const [clock, setClock] = useState('00:00:00')
   const intervalRef = useRef(-1)
 
+  // Redraw timers by updating state when there is a change in props from the parent component
+  useEffect(() => {
+    setCount(maxSec)
+  }, [maxSec])
+
   useEffect(() => {
     setClock(convert_hhmmss(count))
   }, [count])
