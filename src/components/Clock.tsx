@@ -2,10 +2,13 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import './Clock.css'
 
 type Props = {
-  maxSec: number
+  maxSec: number,
+  sliderHour: number,
+  silderMin: number,
+  sliderSec: number
 }
 
-export const Clock: React.FC<Props> = ({maxSec = 0}) => {
+export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 0, sliderSec = 0}) => {
   const [count, setCount] = useState(maxSec)
   const [clock, setClock] = useState('00:00:00')
   const intervalRef = useRef(-1)
@@ -43,6 +46,15 @@ export const Clock: React.FC<Props> = ({maxSec = 0}) => {
     intervalRef.current = -1
   }, [])
 
+  const reset = () => {
+    if (intervalRef.current === -1) {
+      return
+    }
+    clearInterval(intervalRef.current)
+    intervalRef.current = -1
+    setCount(sliderHour * 60 * 60 + silderMin * 60 + sliderSec)
+  }
+
   const convert_hhmmss = (s: number) => {
     const hour = Math.floor(s / 60 / 60) % 24
     const min = Math.floor(s / 60) % 60
@@ -69,6 +81,7 @@ export const Clock: React.FC<Props> = ({maxSec = 0}) => {
       <h1 className='clock'>{clock}</h1>
       <button onClick={start}>start</button>
       <button onClick={stop}>stop</button>
+      <button onClick={reset}>reset</button>
     </div>
   );
 };
