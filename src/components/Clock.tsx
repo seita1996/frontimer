@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import './Clock.css'
+import { Icon } from './Icon'
 
 type Props = {
   maxSec: number,
@@ -78,10 +79,13 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
 
   return (
     <div className='container'>
-      <h1 className='clock'>{clock}</h1>
+      <div className='clock'>{clock}</div>
       <button onClick={start}>start</button>
       <button onClick={stop}>stop</button>
       <button onClick={reset}>reset</button>
+      <Icon name='play' className='icon' />
+      <Icon name='pause' className='icon' />
+      <Icon name='rewind' className='icon' />
     </div>
-  );
-};
+  )
+}
