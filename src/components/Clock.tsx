@@ -80,12 +80,17 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
   return (
     <div className='container'>
       <div className='clock'>{clock}</div>
-      <button onClick={start}>start</button>
-      <button onClick={stop}>stop</button>
-      <button onClick={reset}>reset</button>
-      <Icon name='play' className='icon' />
-      <Icon name='pause' className='icon' />
-      <Icon name='rewind' className='icon' />
+      <div className='flexSpaceAround'>
+        <div onClick={start}>
+          <Icon name='play' className='icon' size='15vw' />
+        </div>
+        <div onClick={stop}>
+          <Icon name='pause' className='icon' size='15vw' />
+        </div>
+        <div onClick={reset}>
+          <Icon name='rewind' className='icon' size='15vw' />
+        </div>
+      </div>
     </div>
   )
 }

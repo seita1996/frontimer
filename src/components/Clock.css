@@ -3,6 +3,12 @@
   font-size: 20vw;
 }
 
+.flexSpaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
 .icon {
   color: white;
+  cursor: pointer;
 }

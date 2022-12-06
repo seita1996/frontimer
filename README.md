@@ -39,3 +39,8 @@ $ git push && git push --tags
 A draft release is created and the built files are available for download.
 
 Reference [Electron Builder Action](https://github.com/marketplace/actions/electron-builder-action)
+
+
+## Other
+
+<a href="https://icons.theforgesmith.com">Icons Powered by: https://icons.theforgesmith.com</a>
