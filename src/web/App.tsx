@@ -8,9 +8,23 @@ export const App = () => {
   const [hour, setHour] = useState(0)
   const [min, setMin] = useState(3)
   const [sec, setSec] = useState(0)
+  const [isTimerProgress, setIsTimerProgress] = useState(false)
 
   const updateMaxSec = () => {
     setMaxSec(hour * 60 * 60 + min * 60 + sec)
+  }
+
+  const sliders = () => {
+    if(isTimerProgress) {
+      return <div></div>
+    }
+    return (
+      <div>
+        <Slider min={0} max={23} defaultValue={hour} name={'hour'} setValue={setHour} />
+        <Slider min={0} max={59} defaultValue={min} name={'min'} setValue={setMin} />
+        <Slider min={0} max={59} defaultValue={sec} name={'sec'} setValue={setSec} />
+      </div>
+    )
   }
 
   useEffect(() => {
@@ -19,10 +33,8 @@ export const App = () => {
 
   return (
     <div className="container">
-      <Clock maxSec={maxSec} sliderHour={hour} silderMin={min} sliderSec={sec} />
-      <Slider min={0} max={23} defaultValue={hour} name={'hour'} setValue={setHour} />
-      <Slider min={0} max={59} defaultValue={min} name={'min'} setValue={setMin} />
-      <Slider min={0} max={59} defaultValue={sec} name={'sec'} setValue={setSec} />
+      <Clock maxSec={maxSec} sliderHour={hour} silderMin={min} sliderSec={sec} setIsTimerProgress={setIsTimerProgress} />
+      {sliders()}
     </div>
   )
 }

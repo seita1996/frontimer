@@ -6,10 +6,11 @@ type Props = {
   maxSec: number,
   sliderHour: number,
   silderMin: number,
-  sliderSec: number
+  sliderSec: number,
+  setIsTimerProgress: Function
 }
 
-export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 0, sliderSec = 0}) => {
+export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 0, sliderSec = 0, setIsTimerProgress}) => {
   const [count, setCount] = useState(maxSec)
   const [clock, setClock] = useState('00:00:00')
   const intervalRef = useRef(-1)
@@ -37,6 +38,7 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
     intervalRef.current = Number(setInterval(() => {
       setCount((c) => c - 1)
     }, 1000))
+    setIsTimerProgress(true)
   }, [])
 
   const stop = useCallback(() => {
@@ -45,6 +47,7 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
     }
     clearInterval(intervalRef.current)
     intervalRef.current = -1
+    setIsTimerProgress(false)
   }, [])
 
   const reset = () => {
