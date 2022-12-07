@@ -51,11 +51,6 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
   }, [])
 
   const reset = () => {
-    if (intervalRef.current === -1) {
-      return
-    }
-    clearInterval(intervalRef.current)
-    intervalRef.current = -1
     setCount(sliderHour * 60 * 60 + silderMin * 60 + sliderSec)
   }
 
