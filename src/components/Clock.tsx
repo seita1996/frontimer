@@ -59,6 +59,22 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
     setCount(sliderHour * 60 * 60 + silderMin * 60 + sliderSec)
   }
 
+  const startStopBtn = () => {
+    if (intervalRef.current === -1) {
+      return (
+        <div onClick={start}>
+          <Icon name='play' className='icon' size='15vw' />
+        </div>
+      )
+    }
+
+    return (
+      <div onClick={stop}>
+        <Icon name='pause' className='icon' size='15vw' />
+      </div>
+    )
+  }
+
   const convert_hhmmss = (s: number) => {
     const hour = Math.floor(s / 60 / 60) % 24
     const min = Math.floor(s / 60) % 60
@@ -84,12 +100,7 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
     <div className='container'>
       <div className='clock'>{clock}</div>
       <div className='flexSpaceAround'>
-        <div onClick={start}>
-          <Icon name='play' className='icon' size='15vw' />
-        </div>
-        <div onClick={stop}>
-          <Icon name='pause' className='icon' size='15vw' />
-        </div>
+        {startStopBtn()}
         <div onClick={reset}>
           <Icon name='rewind' className='icon' size='15vw' />
         </div>
