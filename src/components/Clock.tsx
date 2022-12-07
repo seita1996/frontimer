@@ -28,6 +28,11 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
     if(count < 1) {
       clearInterval(intervalRef.current)
       playSound()
+      document.body.classList.remove('background-bluegradient')
+      document.body.classList.add('background-redgradient')
+    } else {
+      document.body.classList.remove('background-redgradient')
+      document.body.classList.add('background-bluegradient')
     }
   }, [count])
 

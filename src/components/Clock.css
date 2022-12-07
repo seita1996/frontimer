@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+.background-redgradient {
+  background: linear-gradient(-135deg, #C04848, #480048);
+}
+
+.background-bluegradient {
+  background: linear-gradient(-135deg, #000428, #004e92);
+}
+
 .clock {
   color: white;
   font-size: 20vw;
