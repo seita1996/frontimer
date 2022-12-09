@@ -17,7 +17,15 @@
 		"appId": "com.seita1996.frontimer",
 		"files": [
 			"dist/**/*"
-		]
+		],
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/ft-logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
 	},
 	"electronmon": {
 		"patterns": [
