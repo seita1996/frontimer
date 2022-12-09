@@ -4,6 +4,8 @@ Desktop timer application.
 
 [![Build/release](https://github.com/seita1996/frontimer/actions/workflows/build.yml/badge.svg)](https://github.com/seita1996/frontimer/actions/workflows/build.yml)
 
+![](https://github.com/seita1996/frontimer/blob/main/src/assets/ft-logo.png)
+
 ## Development
 
 environment building
