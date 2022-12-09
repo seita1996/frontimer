@@ -14,7 +14,7 @@
   appearance: none;
   cursor: pointer;
   position: relative;
-  border: 2px solid rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(28, 86, 119, 0.7);
   width: 22px;
   height: 22px;
   display: block;
@@ -22,7 +22,15 @@
   border-radius: 50%;
   -webkit-border-radius: 50%;
 }
+.input-range[type=range]:hover::-webkit-slider-thumb {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+  transition: 0.4s;
+}
 .input-range[type=range]:active::-webkit-slider-thumb {
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6);
   transition: 0.4s;
+}
+
+.input-range[type=range] {
+  margin-top: 4vh;
 }

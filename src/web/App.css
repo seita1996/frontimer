@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.sliderBlock {
+  margin-top: 4vh;
+}
+
 html {
   height: 100%;
 }

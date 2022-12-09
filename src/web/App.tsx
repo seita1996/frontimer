@@ -19,7 +19,7 @@ export const App = () => {
       return <div></div>
     }
     return (
-      <div>
+      <div className='sliderBlock'>
         <Slider min={0} max={23} defaultValue={hour} name={'hour'} setValue={setHour} />
         <Slider min={0} max={59} defaultValue={min} name={'min'} setValue={setMin} />
         <Slider min={0} max={59} defaultValue={sec} name={'sec'} setValue={setSec} />
