@@ -3,6 +3,9 @@
 Desktop timer application.
 
 [![Build/release](https://github.com/seita1996/frontimer/actions/workflows/build.yml/badge.svg)](https://github.com/seita1996/frontimer/actions/workflows/build.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/seita1996/frontimer)](https://github.com/seita1996/frontimer/releases)
+![GitHub all releases](https://img.shields.io/github/downloads/seita1996/frontimer/total?color=blue)
 
 ![](https://github.com/seita1996/frontimer/blob/main/src/assets/ft-logo.png)
 
