@@ -1,0 +1,10 @@
+.bar {
+  height: 3px;
+  /* width: 100%; */
+  background-color: white;
+  box-shadow:
+    0 0 30px 15px #fff,  /* inner */
+    0 0 50px 30px rgba(32, 208, 221, 0.486), /* middle */
+    0 0 70px 45px rgba(231, 44, 159, 0.274); /* outer */
+  transition: .5s;
+}

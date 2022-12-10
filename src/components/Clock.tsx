@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import './Clock.css'
 import { Icon } from './Icon'
+import { Progressbar } from './Progressbar'
 
 type Props = {
   maxSec: number,
@@ -99,7 +100,8 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
   return (
     <div className='container'>
       <div className='clock'>{clock}</div>
-      <div className='flexSpaceAround'>
+      <Progressbar current={count} max={maxSec} />
+      <div className='flexSpaceAround mt-6vh'>
         {startStopBtn()}
         <div onClick={reset}>
           <Icon name='rewind' className='icon' size='15vw' />

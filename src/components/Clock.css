@@ -23,3 +23,7 @@
   color: white;
   cursor: pointer;
 }
+
+.mt-6vh {
+  margin-top: 6vh;
+}
