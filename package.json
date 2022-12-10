@@ -1,8 +1,8 @@
 {
 	"name": "frontimer",
 	"description": "",
-	"version": "0.1.8",
-	"author": "",
+	"version": "0.1.9",
+	"author": "Seitaro",
 	"license": "MIT",
 	"main": "dist/main.js",
 	"scripts": {
