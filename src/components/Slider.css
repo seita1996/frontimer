@@ -23,11 +23,11 @@
   -webkit-border-radius: 50%;
 }
 .input-range[type=range]:hover::-webkit-slider-thumb {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 5px 2px white;
   transition: 0.4s;
 }
 .input-range[type=range]:active::-webkit-slider-thumb {
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 10px 4px white;
   transition: 0.4s;
 }
 

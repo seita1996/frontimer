@@ -24,6 +24,11 @@
   cursor: pointer;
 }
 
+.icon:hover {
+  filter: drop-shadow(0 0 5px white);
+  transition: .3s;
+}
+
 .mt-6vh {
   margin-top: 6vh;
 }
