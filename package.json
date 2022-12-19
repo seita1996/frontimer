@@ -38,7 +38,7 @@
 		"react-svg": "^15.1.15"
 	},
 	"devDependencies": {
-		"@types/node": "^18.11.13",
+		"@types/node": "^18.11.17",
 		"@types/react": "^18.0.26",
 		"@types/react-dom": "^18.0.9",
 		"cross-env": "^7.0.3",
