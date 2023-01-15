@@ -103,7 +103,7 @@ export const Clock: React.FC<Props> = ({maxSec = 0, sliderHour = 0, silderMin = 
       <Progressbar current={count} max={maxSec} />
       <div className='flexSpaceAround mt-6vh'>
         {startStopBtn()}
-        <div onClick={reset}>
+        <div data-testid='resetbutton' onClick={reset}>
           <Icon name='rewind' className='icon' size='15vw' />
         </div>
       </div>
