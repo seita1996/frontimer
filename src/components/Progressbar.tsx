@@ -10,13 +10,12 @@ export const Progressbar: React.FC<Props> = ({current = 0, max = 10}) => {
   const [percentageOfTimeLeft, setPercentageOfTimeLeft] = useState(100)
 
   useEffect(() => {
-    console.log('per', current / max * 100)
     setPercentageOfTimeLeft(current / max * 100)
   }, [current, max])
 
   return (
     <div>
-      <div className='bar' style={{width: `${percentageOfTimeLeft}%`}}></div>
+      <div className='bar' data-testid='leftbar' style={{width: `${percentageOfTimeLeft}%`}}></div>
     </div>
   )
 }
