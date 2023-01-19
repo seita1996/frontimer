@@ -27,8 +27,24 @@ export const App = () => {
     )
   }
 
+  async function loadTimerHMS() {
+    const timerh = await window.app.getTimerH()
+    const timerm = await window.app.getTimerM()
+    const timers = await window.app.getTimerS()
+    setHour(timerh)
+    setMin(timerm)
+    setSec(timers)
+  }
+
+  useEffect(() => {
+    loadTimerHMS()
+  }, [])
+
   useEffect(() => {
     updateMaxSec()
+    window.app.setTimerH(hour)
+    window.app.setTimerM(min)
+    window.app.setTimerS(sec)
   }, [hour, min, sec])
 
   return (

@@ -3,4 +3,7 @@ declare type StoreType = {
   y?: number;
   width?: number;
   height?: number;
+  timerH?: number;
+  timerM?: number;
+  timerS?: number;
 }

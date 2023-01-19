@@ -1,5 +1,5 @@
 import path from 'path'
-import { BrowserWindow, app } from 'electron'
+import { BrowserWindow, app, ipcMain } from 'electron'
 import Store from 'electron-store'
 
 const store = new Store<StoreType>({
@@ -13,6 +13,9 @@ const store = new Store<StoreType>({
     y: undefined,
     width: 800,
     height: 640,
+    timerH: 0,
+    timerM: 3,
+    timerS: 0,
   },
 })
 
@@ -36,6 +39,25 @@ app.whenReady().then(() => {
     const { x, y, width, height } = mainWindow.getBounds()
     store.set({ x, y, width, height })
   })
+})
+
+ipcMain.handle('getTimerH', async (event, data) => {
+  return store.get('timerH')
+})
+ipcMain.handle("setTimerH", async (event, data) => {
+  store.set('timerH', data)
+})
+ipcMain.handle('getTimerM', async (event, data) => {
+  return store.get('timerM')
+})
+ipcMain.handle("setTimerM", async (event, data) => {
+  store.set('timerM', data)
+})
+ipcMain.handle('getTimerS', async (event, data) => {
+  return store.get('timerS')
+})
+ipcMain.handle("setTimerS", async (event, data) => {
+  store.set('timerS', data)
 })
 
 app.once('window-all-closed', () => app.quit())
