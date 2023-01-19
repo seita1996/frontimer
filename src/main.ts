@@ -9,8 +9,6 @@ const store = new Store<StoreType>({
    */
   configFileMode: 0o666,
   defaults: {
-    x: undefined,
-    y: undefined,
     width: 800,
     height: 640,
     timerH: 0,
@@ -21,8 +19,6 @@ const store = new Store<StoreType>({
 
 app.whenReady().then(() => {
   const mainWindow = new BrowserWindow({
-    x: store.get('x'),
-    y: store.get('y'),
     width: store.get('width'),
     height: store.get('height'),
     webPreferences: {
@@ -36,8 +32,8 @@ app.whenReady().then(() => {
   // mainWindow.webContents.openDevTools({ mode: 'detach' });
 
   mainWindow.once('close', () => {
-    const { x, y, width, height } = mainWindow.getBounds()
-    store.set({ x, y, width, height })
+    const { width, height } = mainWindow.getBounds()
+    store.set({ width, height })
   })
 })
 
