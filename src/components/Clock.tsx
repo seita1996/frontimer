@@ -5,9 +5,9 @@ import { Progressbar } from './Progressbar'
 
 type Props = {
   maxSec: number,
-  sliderHour: number,
-  silderMin: number,
-  sliderSec: number,
+  sliderHour: number|undefined,
+  silderMin: number|undefined,
+  sliderSec: number|undefined,
   setIsTimerProgress: Function
 }
 

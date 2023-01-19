@@ -4,7 +4,7 @@ import './Slider.css'
 type Props = {
   min: number,
   max: number,
-  defaultValue: number,
+  defaultValue: number|undefined,
   name: string,
   setValue: Function
 }
