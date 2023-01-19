@@ -19,6 +19,7 @@ const store = new Store<StoreType>({
 
 app.whenReady().then(() => {
   const mainWindow = new BrowserWindow({
+    frame: false,
     width: store.get('width'),
     height: store.get('height'),
     webPreferences: {

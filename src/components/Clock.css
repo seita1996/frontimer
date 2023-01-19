@@ -12,6 +12,8 @@
   color: white;
   font-size: 20vw;
   font-family: 'Share Tech Mono', monospace;
+  -webkit-app-region: drag;
+  cursor: grab;
 }
 
 .flexSpaceAround {
