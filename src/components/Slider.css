@@ -2,7 +2,7 @@
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
-  height: 5px;
+  height: 3px;
   width: 100%;
   border-radius: 6px;
 }
@@ -14,9 +14,8 @@
   appearance: none;
   cursor: pointer;
   position: relative;
-  border: 2px solid rgba(28, 86, 119, 0.7);
-  width: 22px;
-  height: 22px;
+  width: 15px;
+  height: 15px;
   display: block;
   background-color: #fff;
   border-radius: 50%;
