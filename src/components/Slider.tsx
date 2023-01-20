@@ -9,7 +9,7 @@ type Props = {
   setValue: Function
 }
 
-export const Slider: React.FC<Props> = ({min = 0, max = 10, defaultValue = 5, name = 'slider', setValue}) => {
+export const Slider: React.FC<Props> = ({min, max, defaultValue, name = 'slider', setValue}) => {
   return (
     <div>
       <input
@@ -19,6 +19,7 @@ export const Slider: React.FC<Props> = ({min = 0, max = 10, defaultValue = 5, na
         min={min}
         max={max}
         defaultValue={defaultValue}
+        value={defaultValue}
         onChange={(
           ev: React.ChangeEvent<HTMLInputElement>,
         ): void => {
