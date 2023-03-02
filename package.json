@@ -48,7 +48,7 @@
 		"@types/react-dom": "^18.0.10",
 		"cross-env": "^7.0.3",
 		"css-loader": "^6.7.3",
-		"electron": "^22.0.3",
+		"electron": "^23.1.1",
 		"electron-builder": "^23.6.0",
 		"electronmon": "^2.0.2",
 		"html-webpack-plugin": "^5.5.0",
