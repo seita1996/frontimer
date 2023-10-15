@@ -1,6 +1,7 @@
 import path from 'path'
 import { BrowserWindow, app, ipcMain } from 'electron'
 import Store from 'electron-store'
+import './assets/icon.png'
 
 const store = new Store<StoreType>({
   /**
@@ -22,6 +23,7 @@ app.whenReady().then(() => {
     frame: false,
     width: store.get('width'),
     height: store.get('height'),
+    icon: path.join(__dirname, './assets/icon.png'),
     webPreferences: {
       preload: path.resolve(__dirname, 'preload.js'),
     },

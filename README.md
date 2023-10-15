@@ -9,7 +9,7 @@ Desktop timer application.
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/seita1996/frontimer)](https://github.com/seita1996/frontimer/releases)
 [![GitHub all releases download count](https://img.shields.io/github/downloads/seita1996/frontimer/total?color=blue)](https://github.com/seita1996/frontimer/releases/latest)
 
-![](https://github.com/seita1996/frontimer/blob/main/src/assets/ft-logo.png)
+![](https://github.com/seita1996/frontimer/blob/main/src/assets/icon.png)
 
 ## Development
 

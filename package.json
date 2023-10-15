@@ -22,11 +22,11 @@
 		],
 		"win": {
 			"target": "nsis",
-			"icon": "src/assets/ft-logo.png"
+			"icon": "src/assets/icon.png"
 		},
     "linux": {
 			"target": "AppImage",
-			"icon": "src/assets/ft-logo.png"
+			"icon": "src/assets/icon.png"
 		},
 		"nsis": {
 			"oneClick": false,
