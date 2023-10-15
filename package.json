@@ -10,6 +10,7 @@
 		"build": "cross-env NODE_ENV=\"production\" webpack --progress",
 		"ebuilder": "electron-builder",
 		"ebuilder:win": "electron-builder --win --x64",
+    "ebuilder:linux": "electron-builder --linux AppImage",
 		"dev:webpack": "cross-env NODE_ENV=\"development\" webpack --progress",
 		"dev:electron": "wait-on dist/main.js dist/index.html && electronmon .",
 		"test": "jest"
