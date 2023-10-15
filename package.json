@@ -24,6 +24,10 @@
 			"target": "nsis",
 			"icon": "src/assets/ft-logo.png"
 		},
+    "linux": {
+			"target": "AppImage",
+			"icon": "src/assets/ft-logo.png"
+		},
 		"nsis": {
 			"oneClick": false,
 			"allowToChangeInstallationDirectory": true
