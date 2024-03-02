@@ -269,10 +269,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.19.0"
 
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.23.2", "@babel/runtime@^7.9.2":
-  version "7.23.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.5.tgz#11edb98f8aeec529b82b211028177679144242db"
-  integrity sha512-NdUTHcPe4C99WxPub+K9l9tK5/lV4UXIoaHSYgzco9BCyjKAAwzdBI+wWtYqHt7LJdbo74ZjRPJgzVweq1sz0w==
+"@babel/runtime@^7.12.5", "@babel/runtime@^7.23.2", "@babel/runtime@^7.23.9", "@babel/runtime@^7.9.2":
+  version "7.24.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.24.0.tgz#584c450063ffda59697021430cb47101b085951e"
+  integrity sha512-Chk32uHMg6TnQdvw2e9IlqPpFX/6NLuK0Ys2PqLb7/gL5uFn9mXvK715FGLlOLQrcO4qIkNHkvPGktzzXexsFw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -1030,7 +1030,7 @@
     "@types/node" "*"
     xmlbuilder ">=11.0.1"
 
-"@types/prop-types@*", "@types/prop-types@^15.7.10":
+"@types/prop-types@*", "@types/prop-types@^15.7.11":
   version "15.7.11"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.11.tgz#2596fb352ee96a1379c657734d4b913a613ad563"
   integrity sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==
@@ -4730,14 +4730,14 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-svg@^16.1.31:
-  version "16.1.31"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-16.1.31.tgz#6fa6f1da7b7b9dbaa4549107f99c6af97c092900"
-  integrity sha512-9jejSwV4J+MF9At+Fh6cRFqkLDuVBi5k4vG+bE/yiT+0sgNqUMC7+uohLiwbFxLYDDzAl2xTqG32UzXTbmpiCA==
+react-svg@^16.1.33:
+  version "16.1.33"
+  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-16.1.33.tgz#32ac0a4256deddc2b6e9258c75e59e3cca287c0c"
+  integrity sha512-XpKC3G1yZ+ay+lBy1KtJWKGEZGMI+291jEfHdyFfm6X3vMVg/mly2+JjPPCr4ihPElxaZI2z32n2RVV7+PFKVw==
   dependencies:
-    "@babel/runtime" "^7.23.2"
+    "@babel/runtime" "^7.23.9"
     "@tanem/svg-injector" "^10.1.68"
-    "@types/prop-types" "^15.7.10"
+    "@types/prop-types" "^15.7.11"
     prop-types "^15.8.1"
 
 react@^18.2.0:
