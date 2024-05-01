@@ -2357,10 +2357,10 @@ electron@^28.1.0:
     "@types/node" "^18.11.18"
     extract-zip "^2.0.1"
 
-electronmon@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/electronmon/-/electronmon-2.0.2.tgz#082cb4c7cd5eee0602308c3253b17ecbef77aea8"
-  integrity sha512-Yw1CXEp5HJT9P6Sns3UP3Krwm5eb2JKqTRAVczKdsUa+U/dMTgONwKIHkPbKSSmtyTV+5JwobxkhFPiRgegObA==
+electronmon@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/electronmon/-/electronmon-2.0.3.tgz#93236d062ebb91268a713a7d214e7cc8dac66f5f"
+  integrity sha512-vpsNupi9sCzOCvx8GACbSHKEImkNF2a6pU5Io2yabARbJeQ/8ZuY7t/43LilF6Qw0nZ0MbKQt4sO3x0F3drpQQ==
   dependencies:
     chalk "^3.0.0"
     import-from "^3.0.0"
